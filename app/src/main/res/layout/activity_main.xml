@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="2dp"
+        android:gravity="center|center_vertical"
+        android:text="Lista de Aprovados"
+        android:layout_marginTop="20pt"
+        />
+
+    <TextView
+        android:id="@+id/mediaIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="2dp"
+        android:gravity="center|center_vertical"
+        android:text="Lista de Aprovados" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sequencia"
+            android:layout_width="5sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Seq" />
+
+        <TextView
+            android:id="@+id/nomeAluno"
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Nome" />
+
+        <TextView
+            android:id="@+id/frequencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Frequencia" />
+
+        <TextView
+            android:id="@+id/media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Media" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listaAlunos"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+</LinearLayout>
